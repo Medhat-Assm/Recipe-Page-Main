@@ -1,0 +1,178 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@font-face {
+  font-family: Young Serif;
+  src: url(../assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+@font-face {
+  font-family: Outfit;
+  src: url(../assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
+/* ========================================================================== */
+
+/* Base styles for the recipe page */
+
+body {
+  font-family: 'Outfit', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: hsl(30, 54%, 90%);
+}
+
+.container {
+  background-color: white;
+  margin: 50px 25%;
+  border-radius: 10px;
+  overflow: auto;
+  padding: 30px;
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.image-container img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 375px) {
+  .mobile-padding{
+    padding: 30px;
+  }
+}
+
+.heading h1 {
+  font-family: Young Serif, serif;
+  font-weight: 400;
+}
+
+.heading p{
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.preparation-container{
+  background-color:  hsl(330, 100%, 98%);
+  padding: 5px 20px;
+  border-radius: 10px;
+}
+
+.preparation-container h3{
+  color: hsl(332, 51%, 32%);
+
+}
+.preparation-container ul li{
+  padding: 5px 10px;
+  font-weight: 300;
+}
+.preparation-container ul li::marker{
+  color: hsl(332, 51%, 32%);
+
+}
+
+.preparation-container ul li span{
+  font-weight: 600;
+}
+
+.ingredients{
+  border-bottom: 1px solid lightgray;
+}
+
+.ingredients h2{
+  color: hsl(14, 45%, 36%);
+  font-family: Young Serif, serif;
+  font-weight: 400;
+}
+
+
+.ingredients ul li{
+  padding: 5px 10px;
+  font-weight: 300;
+}
+
+.ingredients ul li::marker{
+  color: hsl(14, 45%, 36%);
+}
+
+.instructions{
+  border-bottom: 1px solid lightgray;
+}
+
+.instructions h2{
+  color: hsl(14, 45%, 36%);
+  font-family: Young Serif, serif;
+  font-weight: 400;
+}
+
+
+.instructions ol li{
+  padding: 5px 10px;
+  font-weight: 300;
+}
+
+.instructions ol li::marker{
+  color: hsl(14, 45%, 36%);
+  font-weight: 600;
+}
+
+.instructions ol li span{
+  font-weight: 600;
+}
+
+.nutrition h2{
+  color: hsl(14, 45%, 36%);
+  font-weight: 400;
+}
+
+.nutrition p{
+  font-weight: 300;
+}
+
+.nutrition .nutrition-table{
+  margin-bottom: 50px;
+}
+
+.nutrition .nutrition-table table{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.nutrition .nutrition-table table tbody tr td{
+  width: 50%;
+  border-bottom: 1px solid lightgray;
+  padding: 10px 0;
+  font-weight: 300;
+}
+
+.nutrition .nutrition-table table tbody tr td:last-child{
+  color: hsl(14, 45%, 36%);
+  font-weight: 600;
+}
+
+.nutrition .nutrition-table table tbody tr:last-child td{
+  border-bottom: none;
+}
+
+.nutrition .nutrition-table table tbody tr td:first-child{
+  padding-left:  50px;
+  
+}
+
+@media screen and (max-width: 375px) {
+  .nutrition .nutrition-table table tbody tr td,.nutrition .nutrition-table table tbody tr td:first-child{
+    padding: 10px 15px;
+  }
+}
